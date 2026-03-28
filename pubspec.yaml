@@ -1,0 +1,59 @@
+name: pistci
+description: "PistCI - Application de cartographie interactive pour la Cote d'Ivoire"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.17
+
+  # Cartographie
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # State management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Navigation
+  go_router: ^14.8.1
+
+  # Réseau & GraphQL
+  graphql_flutter: ^5.2.0-beta.7
+  dio: ^5.7.0
+
+  # Géolocalisation
+  geolocator: ^13.0.2
+
+  # Connectivité & partage
+  connectivity_plus: ^6.1.4
+  share_plus: ^10.1.4
+  shared_preferences: ^2.5.3
+
+  # Utilitaires
+  equatable: ^2.0.7
+  uuid: ^4.5.1
+  collection: ^1.19.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  riverpod_generator: ^2.6.3
+  build_runner: ^2.4.14
+  json_serializable: ^6.9.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
